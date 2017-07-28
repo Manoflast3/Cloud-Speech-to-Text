@@ -1,0 +1,7 @@
+service firebase.storage {
+  match /b/XXX.appspot.com/o {
+    match /users/{userId}/audio/{allPaths=**} {
+      allow read, write: if request.auth.uid == userId;
+    }
+  }
+}
