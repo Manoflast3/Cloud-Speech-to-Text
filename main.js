@@ -1,5 +1,5 @@
 'use strict';
-
+// TODO: work on extending to web UI.
 async function syncRecognize(
   filename,
   encoding,
@@ -14,13 +14,11 @@ async function syncRecognize(
   // Creates a client
   const client = new speech.SpeechClient();
 
-  /**
-   * TODO(developer): Uncomment the following lines before running the sample.
-   */
-  // const filename = 'Local path to audio file, e.g. /path/to/audio.raw';
-  // const encoding = 'Encoding of the audio file, e.g. LINEAR16';
-  // const sampleRateHertz = 16000;
-  // const languageCode = 'BCP-47 language code, e.g. en-US';
+
+  const filename = 'Local path to audio file, e.g. /path/to/audio.raw';
+  const encoding = 'Encoding of the audio file, e.g. LINEAR16';
+  const sampleRateHertz = 16000;
+  const languageCode = 'BCP-47 language code, e.g. en-US';
 
   const config = {
     encoding: encoding,
@@ -59,12 +57,12 @@ async function syncRecognizeGCS(
   const client = new speech.SpeechClient();
 
   /**
-   * TODO(developer): Uncomment the following lines before running the sample.
+   *
    */
-  // const gcsUri = 'gs://my-bucket/audio.raw';
-  // const encoding = 'Encoding of the audio file, e.g. LINEAR16';
-  // const sampleRateHertz = 16000;
-  // const languageCode = 'BCP-47 language code, e.g. en-US';
+  const gcsUri = 'gs://my-bucket/audio.raw';
+  const encoding = 'Encoding of the audio file, e.g. LINEAR16';
+  const sampleRateHertz = 16000;
+  const languageCode = 'BCP-47 language code, e.g. en-US';
 
   const config = {
     encoding: encoding,
@@ -103,13 +101,10 @@ async function syncRecognizeWords(
   // Creates a client
   const client = new speech.SpeechClient();
 
-  /**
-   * TODO(developer): Uncomment the following lines before running the sample.
-   */
-  // const filename = 'Local path to audio file, e.g. /path/to/audio.raw';
-  // const encoding = 'Encoding of the audio file, e.g. LINEAR16';
-  // const sampleRateHertz = 16000;
-  // const languageCode = 'BCP-47 language code, e.g. en-US';
+  const filename = 'Local path to audio file, e.g. /path/to/audio.raw';
+  const encoding = 'Encoding of the audio file, e.g. LINEAR16';
+  const sampleRateHertz = 16000;
+  const languageCode = 'BCP-47 language code, e.g. en-US';
 
   const config = {
     enableWordTimeOffsets: true,
@@ -162,9 +157,7 @@ async function asyncRecognize(
   // Creates a client
   const client = new speech.SpeechClient();
 
-  /**
-   * TODO(developer): Uncomment the following lines before running the sample.
-   */
+
   // const filename = 'Local path to audio file, e.g. /path/to/audio.raw';
   // const encoding = 'Encoding of the audio file, e.g. LINEAR16';
   // const sampleRateHertz = 16000;
@@ -211,7 +204,7 @@ async function asyncRecognizeGCS(
   const client = new speech.SpeechClient();
 
   /**
-   * TODO(developer): Uncomment the following lines before running the sample.
+   *
    */
   // const gcsUri = 'gs://my-bucket/audio.raw';
   // const encoding = 'Encoding of the audio file, e.g. LINEAR16';
@@ -259,7 +252,7 @@ async function asyncRecognizeGCSWords(
   const client = new speech.SpeechClient();
 
   /**
-   * TODO(developer): Uncomment the following lines before running the sample.
+   *
    */
   // const gcsUri = 'gs://my-bucket/audio.raw';
   // const encoding = 'Encoding of the audio file, e.g. LINEAR16';
@@ -364,7 +357,7 @@ function streamingMicRecognize(encoding, sampleRateHertz, languageCode) {
   const client = new speech.SpeechClient();
 
   /**
-   * TODO(developer): Uncomment the following lines before running the sample.
+   *
    */
   // const encoding = 'Encoding of the audio file, e.g. LINEAR16';
   // const sampleRateHertz = 16000;
@@ -598,7 +591,7 @@ async function syncRecognizeWithMultiChannel(fileName) {
   const client = new speech.SpeechClient();
 
   /**
-   * TODO(developer): Uncomment the following lines before running the sample.
+   *
    */
   // const fileName = 'Local path to audio file, e.g. /path/to/audio.raw';
 

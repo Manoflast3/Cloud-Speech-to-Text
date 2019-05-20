@@ -6,6 +6,7 @@ var directions = {};
 
 
 // English language
+// TODO: do chinese 
 
 languages.push('en-US');
 

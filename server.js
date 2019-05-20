@@ -44,8 +44,7 @@ if (process.env.GAE_INSTANCE) {
 const rootRef = firebase.database().ref();
 
 const sender = new gcm.Sender(gcmServerKey);
-
-// The encoding of the audio file, e.g. 'LINEAR16'
+// Linear16 is encoding format
 const encoding = 'LINEAR16';
 // The sample rate of the audio file, e.g. 16000
 const sampleRate = 16000;
